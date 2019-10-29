@@ -75,6 +75,10 @@ else()
     add_definitions(-DFLAC__NO_DLL)
 endif()
 
+if(MINGW)
+    add_definitions(-DHAVE_FSEEKO -DHAVE_INTTYPES_H)
+endif()
+
 install(TARGETS libFLAC libFLACXX
     RUNTIME DESTINATION bin
     ARCHIVE DESTINATION lib

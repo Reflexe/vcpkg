@@ -1,3 +1,8 @@
+if(MINGW OR LINUX)
+    add_definitions(-DHAVE_LRINT -DHAVE_LRINTF)
+    set(CMAKE_C_STANDARD 99)
+endif()
+
 add_library(libsamplerate-0
     samplerate.c
     src_sinc.c
