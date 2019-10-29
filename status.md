@@ -12,7 +12,7 @@
 | fluidsynth | x | 
 | libstk | ✔️ | 
 | sdl2 | ✔️ |
-| fltk | x | 
+| fltk | ✔ | 
 | libgig | nonexistant |
 | mp3lame | x |
 | glib | x |
